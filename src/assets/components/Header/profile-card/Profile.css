@@ -1,0 +1,39 @@
+#tabcontent {
+  flex: 1 1 400px;
+  max-width: 600px;
+  background-color: #ffe5ec;
+  color: black;
+  border: 2px solid black;
+  border-radius: 1rem;
+  padding: 1rem;
+  transform: translateX(-120%);
+  opacity: 0;
+  transition: transform 1.5s ease, opacity 0.5s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.15);
+}
+
+#tabcontent.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Profile card */
+.profile-card {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.profile-card pre {
+  white-space: pre-wrap;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  #tabcontent {
+    transform: translateY(-120%);
+  }
+
+  #tabcontent.show {
+    transform: translateY(0);
+  }
+}

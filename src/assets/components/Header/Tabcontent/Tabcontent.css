@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+  #tabcontent {
+    transform: translateY(-120%);
+  }
+
+  #tabcontent.show {
+    transform: translateY(0);
+  }
+}

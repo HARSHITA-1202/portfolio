@@ -1,0 +1,26 @@
+.pic-container {
+  flex: 1 1 250px;
+  max-width: 300px;
+  text-align: center;
+}
+
+#mypic {
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.15);
+}
+
+#btn {
+  width: 100%;
+  margin-top: 0.7rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #ffe5ec;
+  border-radius: 0.3rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.15);
+}
