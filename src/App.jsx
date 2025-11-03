@@ -1,6 +1,6 @@
 import "./index.css";
 import React, { useState } from "react";
-import { Navbar } from "./assets/components/navbar/navbar.jsx";
+import { Navbar } from "./assets/components/navbar/Navbar.jsx";
 import { Header } from "./assets/components/Header/Header.jsx";
 import { Skill } from "./assets/components/maincontent/Skill/Skill.jsx";
 import { Example } from "./assets/components/maincontent/example/Example.jsx";
