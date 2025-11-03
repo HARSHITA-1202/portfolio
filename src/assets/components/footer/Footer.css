@@ -1,26 +1,22 @@
 #contact {
     background-color: #ffe5ec;
-    padding: 0.2rem 0 0.2rem 1rem;
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 #pic img {
-    width: 12rem;
-    height: 12rem;
-    padding-top: 1rem;
+    width: 10rem;
+    height: 10rem;
     object-fit: contain;
-
 }
 
 @media (max-width: 768px) {
     #contact {
         flex-direction: column;
         text-align: center;
-    }
-
-    #pic {
-        margin-top: 1rem;
     }
 }

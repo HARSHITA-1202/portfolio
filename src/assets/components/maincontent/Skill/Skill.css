@@ -1,52 +1,80 @@
 #core-concepts {
-    padding: 2rem;
-    border-radius: 2rem;
-    min-height: auto;
-    width: 100rem;
-    margin: 4rem auto 4rem;
     background-color: #ffe5ec;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.15);
     border: 2px solid black;
+    border-radius: 1.5rem;
+    width: 85%;
+    margin: 3rem auto;
+    padding: 3rem 2rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.15);
 }
 
 #core-concepts h2 {
     text-align: center;
-    font-family: "Roboto Condensed", sans-serif;
-    margin: 0 0 2rem 0;
-    color: black;
     font-size: 2rem;
-
+    font-weight: 900;
+    margin-bottom: 2.5rem;
+    color: black;
 }
 
 #core-concepts ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4rem;
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    gap: 10rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    line-height: 1.3rem;
 }
 
 #core-concepts li {
-    width: 13rem;
+    background-color: #ffe5ec;
+    width: 15rem;
     text-align: center;
-    /* font-size: 1rem; */
-    color: balck;
-    /* font-weight: bold; */
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    color: black;
+    font-weight: 600;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#core-concepts li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
 
 #core-concepts li img {
     height: 6rem;
     width: 6rem;
-    object-fit: cover;
-    margin: 1rem;
+    object-fit: contain;
+    margin-bottom: 1rem;
 }
-
-
 
 #core-concepts li p {
     font-size: 1rem;
-    font-weight: bold;
+    line-height: 1.4;
+}
+
+/* 📱 Responsive for Mobile */
+@media (max-width: 768px) {
+    #core-concepts {
+        width: 95%;
+        padding: 2rem 1rem;
+    }
+
+    #core-concepts ul {
+        gap: 2rem;
+    }
+
+    #core-concepts li {
+        width: 10rem;
+        padding: 0.8rem;
+    }
+
+    #core-concepts li img {
+        height: 4.5rem;
+        width: 4.5rem;
+    }
 }
